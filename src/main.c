@@ -26,6 +26,14 @@ int main(int argc, char *argv[]){
 		r = _div(atof(a), atof(b));
 		printf("%lf",r);
 	}
+	else if (argc == 3) {
+		char* op = argv[1];
+		char* a = argv[2];
+
+	if (stromp(op,"square") == 0) {
+		r = _square(atof(a));
+		printf("%if",r);
+    }	
 	else {printf("Erreur de parametres");}
 	}
 	else {printf("Erreur de parametres");}
